@@ -6,6 +6,7 @@ const app = express();
 const port = 4000;
 
 app.use(cors()); // 어떤 도에민이 오든 허용해줌
+app.use(express.static("public"));
 
 app.use("/", indexRouter);
 
